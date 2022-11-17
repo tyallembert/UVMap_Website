@@ -11,6 +11,8 @@
 main{
     position: absolute;
     top:0;
+    background:linear-gradient(0deg, var(--green), rgb(28, 48, 26));
+    background-attachment: fixed;
 }
 img{
     max-width: 100%;
@@ -136,17 +138,19 @@ a:visited{
     margin: auto;
 }
 .inspirationHeader{
-    color: var(--green);
-    -webkit-text-stroke: 1px var(--gold);
+    /* color: var(--green); */
+    color: var(--gold);
+    /* -webkit-text-stroke: 1px var(--gold); */
     font-size: 3em;
     font-weight: 900;
     padding: 0.3em;
+    padding-left: 2em;
 }
 .inspiration p{
     color: white;
     text-indent: 3em;
     font-size: 1.3em;
-    font-weight: 600;
+    font-weight: 300;
     line-height: 1.7em;
 }
 .inspiration .firstChunk{
@@ -165,24 +169,27 @@ a:visited{
     width: 30%;
 }
 .inspirationPOne{
-    width: 50%;
+    width: 60%;
+}
+.firstChunk{
+    padding-bottom: 1em;
 }
 
 .tour{
-    width: 90%;
+    width: 75%;
     margin: 3em auto;
 }
 .tour h1{
-    color: var(--green);
-    -webkit-text-stroke: 1px var(--gold);
+    color: var(--gold);
+    /* -webkit-text-stroke: 1px var(--gold); */
     font-size: 3em;
     font-weight: 900;
-    padding: 0.3em;
+    padding-top: 1em;
+    
 }
 .tourWrapper{
     display: flex;
     flex-direction: row;
-    width: 80%;
     height: 40em;
     margin: auto;
     border: solid 2px var(--gold);
