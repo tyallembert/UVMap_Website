@@ -56,7 +56,7 @@ a:visited{
     align-items: center;
     justify-content: center;
     width: 100%;
-    min-height: var(--header-height);
+    max-height: var(--header-height);
     padding-top: 2em;
 }
 .indexTitleContainer{
@@ -82,10 +82,33 @@ a:visited{
     height: var(--header-height);
     width: 40%;
     margin-left: 5em;
+    margin-top: 7em;
+    transition: all 400ms ease;
+}
+.indexHeader .imagesContainer:hover #imageMap{
+    top: 6em;
+    left: 10%;
+}
+.indexHeader .imagesContainer:hover #imageSchedule{
+    top: 6em;
+    left: 50%;
+}
+.indexHeader .imagesContainer:hover #imageSettings{
+    top: 6em;
+    left: 90%;
 }
 .singleImage{
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 14em;
+    padding: 0.5em;
+    background-color: rgb(0,0,0);
+    border-radius: 35px;
+    box-shadow: inset 0px 0px 5px rgba(255,255,255,0.7),
+    -5px 0px 10px rgba(0,0,0,0.5);
+    transition: all 400ms ease;
 }
 #imageMap{
     top: 10em;
@@ -159,13 +182,22 @@ a:visited{
 }
 .inspiration .firstChunk .imagesContainer{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.inspiration .firstChunk .imagesContainer .mapImagesContainer{
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     width: 50%;
-    padding: 0px 10%;
 }
 .inspiration .firstChunk .imagesContainer img{
+    width: 50%;
+}
+.inspiration .firstChunk .imagesContainer .mapImagesContainer img{
     width: 30%;
 }
 .inspirationPOne{
@@ -174,6 +206,10 @@ a:visited{
 .firstChunk{
     padding-bottom: 1em;
 }
+
+/*====================================*/
+/*Tour*/
+/*====================================*/
 
 .tour{
     width: 75%;
@@ -192,12 +228,17 @@ a:visited{
     flex-direction: row;
     height: 40em;
     margin: auto;
-    border: solid 2px var(--gold);
-    background: linear-gradient(180deg, rgb(255, 255, 255), rgb(201, 201, 201));
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.8), rgba(201, 201, 201, 0.8));
+    box-shadow: 2px 5px 20px rgba(0,0,0,0.7),
+    inset 0px 0px 5px rgba(255,255,255,1);
     border-radius: 30px;
     overflow: hidden;
 }
 .tourWrapper .leftSide{
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 60%;
     box-shadow: 0px 0px 50px rgba(0,0,0,0.5);
     z-index: 2;
@@ -209,12 +250,39 @@ a:visited{
     align-items: center;
     width: 40%;
 }
+.tourWrapper .rightSide .tourImageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    border-radius: 3em;
+    padding: 0.8em;
+    box-shadow: inset 0px 0px 4px rgba(255,255,255,0.7);
+    background-color: rgb(0,0,0);
+    overflow: hidden;
+}
 .tourWrapper .rightSide img{
-    height: 95%;
+    width: 100%;
 }
 .tourWrapper .leftSide h2{
     color: var(--green);
     text-decoration: underline;
     font-size: 2.2em;
     margin-bottom: 1em;
+    width: 100%;
+}
+.tourNextButton{
+    position: absolute;
+    bottom: 10%;
+    text-decoration: none;
+    padding: 1em;
+    border-radius: 100px;
+    width: 150px;
+    font-weight: 600;
+    font-size: 0.9em;
+    transition: all ease-in-out 200ms;
+    background-color: var(--gold);
+    border: solid 2px white;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
 }

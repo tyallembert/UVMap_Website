@@ -1,3 +1,54 @@
+class Tour {
+	constructor(activePage) {
+		this.pages = {
+			1: {
+				"title": "Signup Page",
+				"description": "signup description",
+				"image": "images/signup.png"
+			},
+			2: {
+				"title": "Login Page",
+				"description": "Login description",
+				"image": "images/login.gif"
+			},
+			3: {
+				"title": "Map Page",
+				"description": "map description",
+				"image": "images/map.gif"
+			},
+			4: {
+				"title": "Schedule Page",
+				"description": "Schedule description",
+				"image": "images/schedule.gif"
+			},
+			5: {
+				"title": "Settings Page",
+				"description": "Settings description",
+				"image": "images/settings.png"
+			}
+		}
+		this.activePage = activePage;
+		this.UITitle = $("#tourTitle");
+		this.UIDescription = $("#tourDescription");
+		this.UIImage = $("#tourImage");
+	}
+	nextPage(){
+		if(this.activePage == 5){
+			this.activePage = 1
+		}else{
+			this.activePage = this.activePage + 1
+		}
+		this.updateUI();
+	}
+	updateUI(){
+		console.log("title: "+this.pages[this.activePage]["title"])
+		this.UITitle.html(this.pages[this.activePage]["title"])
+		this.UIDescription.html(this.pages[this.activePage]["description"])
+		this.UIImage.attr("src",this.pages[this.activePage]["image"])
+	}
+}
+  
+
 $("a[href^='#']").click(function(e) {
 	e.preventDefault();
 	

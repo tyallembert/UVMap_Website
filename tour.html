@@ -22,20 +22,26 @@ crossorigin="anonymous"></script>
     <main class = "indexMain">
         <div class = "tour">
             <h1 class="tourh1">TAKE A TOUR</h1>
-            <div class = "tourWrapper" id = "2">
+            <div class = "tourWrapper">
                 <div class = "leftSide">
                     <h2 id = "tourTitle">Map</h2>
                     <p id = "tourDescription">This will be the description of the map page</p>
                     <input 
                     type="button"
-                    onclick="showNextPage()"
+                    class="tourNextButton"
+                    onclick="tour.nextPage()"
                     value="Next">
                 </div>
                 <div class = "rightSide">
-                    <img id = "tourImage" src="Images/map-nobg.png">
+                    <div class = "tourImageContainer">
+                        <img id = "tourImage" src="images/map.png">
+                    </div>
                 </div>
             </div>
         </div>
     </main>
+    <script>
+        let tour = new Tour(1);
+    </script>
 </body>
 </html>
