@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="custom.css">
+    <script src="script.js?id=1234"></script>
+    <script
+src="https://code.jquery.com/jquery-3.4.1.js"
+integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+crossorigin="anonymous"></script>
+    <title>UVMaps</title>
+</head>
+<body>
+    <nav class = "navigation">
+        <a href="index.html">Home</a>
+        <a href="">Contributors</a>
+        <a href="">Example</a>
+    </nav>
+    <main class = "indexMain">
+        <div class = "indexHeader">
+            <div class = "indexTitleContainer">
+                <h1 class = "indexTitle">UVMaps</h1>
+                <h2 class = "indexTitle2">Revolutionizing UVM travel</h2>
+                <div class = "buttonsContainer">
+                    <a href="#inspiration" class = "buttonInspiration">Inspiration</a>
+                    <a href="#development" class = "buttonDevelopment">Development</a>
+                </div>
+            </div>
+            <div class = "imagesContainer">
+                <div class = "singleImage" id = "imageSettings">
+                    <img src="images/settings-nobg.png">
+                </div>
+                <div class = "singleImage" id = "imageSchedule">
+                    <img src="images/schedule-nobg.png">
+                </div>
+                <div class = "singleImage" id = "imageMap">
+                    <img src="images/map-nobg.png">
+                </div>
+            </div>
+        </div>
+        <div class = "inspiration" id = "inspiration">
+            <h1 class = "inspirationHeader">OUR INSPIRATION</h1>
+            <!-- <div>
+                <img src="images/widecampusview.jpg">
+            </div> -->
+            <div class = "firstChunk">
+                <p class = "inspirationPOne">The University of Vermont has a large and beautiful campus. To fully take advantage of that, UVMap is designed to be a student's best friend. Much like Google Maps & Apple Maps, UVMap seamlessly provides mapping and travel assistance to fulfill your navigation dreams. Utilizing Apple Mapkit algorithms and presentation, UVMap brings the same convenience to the University of Vermont campus. Able to navigate to any building on campus, as well as giving you campus-specific directions, getting to class has never been easier.</p>
+                <div class = "imagesContainer">
+                    <img src = "Images/apple_maps_icon.png">
+                    <img src = "Images/google_maps_icon.png">
+                </div>
+            </div>
+            <p class = "inspirationPTwo">Beyond just navigation, this app is loaded with functionality to fully support students here at The University of Vermont. First stop is the main page, featuring the map and a modern GUI with gadgets to help students track their distance, recommended leaving time, methods of transportation, and more. Next stop is the schedule page, where students can search through UVM's classes and customize their own weekly and daily schedules. This functionality also enables students with up-to-date class tracking, which allows them to plan out their week and courseload, and also build potential schedules for the future. The last stop is the settings page, where students are able to customize the app to their liking, and also fine-tune how the app specifically helps you.</p>
+        </div>
+        <div class = "tour">
+            <h1>TAKE A TOUR!</h1>
+            <div class = "tourWrapper" id = "2">
+                <div class = "leftSide">
+                    <h2 id = "tourTitle">Map</h2>
+                    <p id = "tourDescription">This will be the description of the map page</p>
+                    <input 
+                    type="button"
+                    onclick="showNextPage()"
+                    value="Next">
+                </div>
+                <div class = "rightSide">
+                    <img id = "tourImage" src="Images/map-nobg.png">
+                </div>
+            </div>
+        </div>
+        <div class = "development" id = "development">
+            <h1>Development</h1>
+            <p>On the development side, UVMap is using Swift: SwiftUI which provides efficient mobile development for all Apple mobile devices. Additionally, the implementation of our Google Firebase backend brings a whole new load of functionality including a login/signup page and credential encryption.</p>
+            <p></p>
+        </div>
+    </main>
+</body>
+</html>

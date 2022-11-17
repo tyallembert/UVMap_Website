@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    scroll-behavior: smooth;
+    --gold: rgb(233, 187, 66);
+    --green: rgb(63, 98, 59);
+    --header-height: 100vh;
+}
+main{
+    position: absolute;
+    top:0;
+}
+img{
+    max-width: 100%;
+}
+a:visited{
+    color: none;
+}
+/*=======================================*/
+/* Navigation */
+/*=======================================*/
+.navigation{
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 60%;
+    margin: auto;
+    z-index: 2;
+}
+.navigation a, .navigation a:visited{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 1em;
+    transition: all ease-in-out 150ms;
+}
+.navigation a:hover{
+    color: var(--gold);
+}
+/*=======================================*/
+/* Index */
+/*=======================================*/
+.indexMain{
+    width: 100%;
+    background:linear-gradient(0deg, var(--green), rgb(28, 48, 26));
+    background-attachment: fixed;
+}
+.indexHeader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: var(--header-height);
+    padding-top: 2em;
+}
+.indexTitleContainer{
+    display: flex;
+    flex-direction: column;
+}
+.indexTitle{
+    font-weight: 800;
+    font-size: 5em;
+    color: white;
+    text-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}
+.indexTitle2{
+    font-weight: 600;
+    font-size: 1.5em;
+    color: var(--gold);
+}
+/*=======================================*/
+/* Images */
+/*=======================================*/
+.indexHeader .imagesContainer{
+    position: relative;
+    height: var(--header-height);
+    width: 40%;
+    margin-left: 5em;
+}
+.singleImage{
+    position: absolute;
+    width: 14em;
+}
+#imageMap{
+    top: 10em;
+    left: 40%;
+}
+#imageSchedule{
+    top: 6em;
+    left: 25%;
+}
+#imageSettings{
+    top: 2em;
+    left: 10%;
+}
+/*=======================================*/
+/* Buttons */
+/*=======================================*/
+.buttonsContainer{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin-top: 2em;
+}
+.buttonsContainer a{
+    text-decoration: none;
+    padding: 1em;
+    border-radius: 100px;
+    /* width: 45%; */
+    font-weight: 600;
+    font-size: 0.9em;
+    transition: all ease-in-out 200ms;
+}
+.buttonsContainer a:hover{
+    box-shadow: -3px 3px 6px rgba(0,0,0,0.7);
+    transform: translate(3px, -3px);
+}
+.buttonInspiration{
+    background-color: var(--gold);
+    border: solid 2px white;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+.buttonDevelopment{
+    color: white;
+    border: solid 2px var(--gold);
+}
+
+.inspiration{
+    padding-top: 2em;
+    width: 90%;
+    margin: auto;
+}
+.inspirationHeader{
+    color: var(--green);
+    -webkit-text-stroke: 1px var(--gold);
+    font-size: 3em;
+    font-weight: 900;
+    padding: 0.3em;
+}
+.inspiration p{
+    color: white;
+    text-indent: 3em;
+    font-size: 1.3em;
+    font-weight: 600;
+    line-height: 1.7em;
+}
+.inspiration .firstChunk{
+    display: flex;
+    flex-direction: row;
+}
+.inspiration .firstChunk .imagesContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    padding: 0px 10%;
+}
+.inspiration .firstChunk .imagesContainer img{
+    width: 30%;
+}
+.inspirationPOne{
+    width: 50%;
+}
+
+.tour{
+    width: 90%;
+    margin: 3em auto;
+}
+.tour h1{
+    color: var(--green);
+    -webkit-text-stroke: 1px var(--gold);
+    font-size: 3em;
+    font-weight: 900;
+    padding: 0.3em;
+}
+.tourWrapper{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 40em;
+    margin: auto;
+    border: solid 2px var(--gold);
+    background: linear-gradient(180deg, rgb(255, 255, 255), rgb(201, 201, 201));
+    border-radius: 30px;
+    overflow: hidden;
+}
+.tourWrapper .leftSide{
+    width: 60%;
+    box-shadow: 0px 0px 50px rgba(0,0,0,0.5);
+    z-index: 2;
+    padding: 1em;
+}
+.tourWrapper .rightSide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+.tourWrapper .rightSide img{
+    height: 95%;
+}
+.tourWrapper .leftSide h2{
+    color: var(--green);
+    text-decoration: underline;
+    font-size: 2.2em;
+    margin-bottom: 1em;
+}
