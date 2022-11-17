@@ -192,7 +192,8 @@ a:visited{
     flex-direction: row;
     height: 40em;
     margin: auto;
-    border: solid 2px var(--gold);
+    /* border: solid 2px var(--gold); */
+    box-shadow: 0px 0px 50px rgba(0,0,0,0.5);
     background: linear-gradient(180deg, rgb(255, 255, 255), rgb(201, 201, 201));
     border-radius: 30px;
     overflow: hidden;
@@ -214,7 +215,24 @@ a:visited{
 }
 .tourWrapper .leftSide h2{
     color: var(--green);
-    text-decoration: underline;
+    /* text-decoration: underline; */
     font-size: 2.2em;
     margin-bottom: 1em;
+}
+
+.tourButton{
+    border: solid 2px red;
+    position: absolute;
+    width: 5%;
+    bottom: 5em;
+    left: 40em;
+    font-size: large;
+}
+input{
+    text-decoration: none;
+    color: var(--green);
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
 }
