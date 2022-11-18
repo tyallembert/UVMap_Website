@@ -266,7 +266,7 @@ a:visited{
 }
 .tourWrapper .leftSide h2{
     color: var(--green);
-    text-decoration: underline;
+    /* text-decoration: underline; */
     font-size: 2.2em;
     margin-bottom: 1em;
     width: 100%;
@@ -285,4 +285,21 @@ a:visited{
     border: solid 2px white;
     color: white;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+.tourButton{
+    border: solid 2px red;
+    position: absolute;
+    width: 5%;
+    bottom: 5em;
+    left: 40em;
+    font-size: large;
+}
+input{
+    text-decoration: none;
+    color: var(--green);
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
 }
