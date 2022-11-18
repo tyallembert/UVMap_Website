@@ -8,9 +8,7 @@
     --green: rgb(63, 98, 59);
     --header-height: 100vh;
 }
-main{
-    position: absolute;
-    top:0;
+body{
     background:linear-gradient(0deg, var(--green), rgb(28, 48, 26));
     background-attachment: fixed;
 }
@@ -21,11 +19,9 @@ a:visited{
     color: none;
 }
 /*=======================================*/
-/* Navigation */
+/* --Navigation-- */
 /*=======================================*/
 .navigation{
-    position: sticky;
-    top: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -43,7 +39,118 @@ a:visited{
     color: var(--gold);
 }
 /*=======================================*/
-/* Index */
+/* --Footer-- */
+/*=======================================*/
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    height: 20em;
+    border-top: solid 2px var(--gold);
+    margin-top: 5rem;
+}
+.logoImage{
+    transform: scale(0.8);
+}
+.footerRightSide{
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    width: 70%;
+    height: 100%;
+    padding: 2rem;
+    box-shadow: -10px 0px 10px rgb(0,0,0,0.2);
+}
+footer .navLinks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 90%;
+}
+footer .navLinks a, footer .navLinks a:visited{
+    text-decoration: none;
+    color: var(--gold);
+}
+.contributorsContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 90%;
+}
+.contributorsContainer p{
+    color: var(--gold);
+}
+.footerTitles{
+    top: 10px;
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: 1em;
+    color: white;
+    margin-bottom: 1.5em;
+}
+.socialsEmailContainer{
+    width: 30%;
+}
+.socialsContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2em;
+}
+.socialA{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    width: 3em;
+}
+.socialA img{
+    height: 3em;
+}
+.socialA p{
+    font-size: 0.9em;
+    padding-top: 0.5em;
+}
+.cantactContainer h2{
+    color: white;
+}
+.emailTextarea{
+    border: none;
+    resize: none;
+    border-radius: 100px;
+    height: 2em;
+    width: 12em;
+    padding: 0.5em;
+    transition: all ease 400ms;
+}
+.emailTextarea:focus{
+    height: 6em;
+    width: 18em;
+    border-radius: 10px;
+    outline: solid 2px var(--gold);
+}
+.sendEmailButton{
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0.5em;
+    border-radius: 100px;
+    margin-top: 1em;
+    width: 100px;
+    font-weight: 600;
+    font-size: 0.9em;
+    transition: all ease-in-out 200ms;
+    background-color: var(--gold);
+    border: solid 2px white;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+/*=======================================*/
+/* --Index-- */
 /*=======================================*/
 .indexMain{
     width: 100%;
@@ -287,19 +394,3 @@ a:visited{
     text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
 }
 
-.tourButton{
-    border: solid 2px red;
-    position: absolute;
-    width: 5%;
-    bottom: 5em;
-    left: 40em;
-    font-size: large;
-}
-input{
-    text-decoration: none;
-    color: var(--green);
-    background:none;
-    border:none;
-    margin:0;
-    padding:0;
-}
