@@ -8,12 +8,18 @@
     --green: rgb(63, 98, 59);
     --header-height: 100vh;
 }
-main{
-    position: absolute;
-    top:0;
+body{
+    width: 100%;
     background:linear-gradient(0deg, var(--green), rgb(28, 48, 26));
     background-attachment: fixed;
+    transform: translateY(-50px)
 }
+/* main{
+    width: 100%;
+    background:linear-gradient(0deg, var(--green), rgb(28, 48, 26));
+    background-attachment: fixed;
+    transform: translateY(-50px)
+} */
 img{
     max-width: 100%;
 }
@@ -24,14 +30,14 @@ a:visited{
 /* Navigation */
 /*=======================================*/
 .navigation{
-    position: sticky;
-    top: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     width: 60%;
+    height: 50px;
     margin: auto;
-    z-index: 2;
+    transform: translateY(50px);
+    z-index: 1;
 }
 .navigation a, .navigation a:visited{
     color: rgb(255, 255, 255);
@@ -45,11 +51,6 @@ a:visited{
 /*=======================================*/
 /* Index */
 /*=======================================*/
-.indexMain{
-    width: 100%;
-    background:linear-gradient(0deg, var(--green), rgb(28, 48, 26));
-    background-attachment: fixed;
-}
 .indexHeader{
     display: flex;
     flex-direction: row;
