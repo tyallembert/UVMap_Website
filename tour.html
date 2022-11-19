@@ -23,17 +23,62 @@ crossorigin="anonymous"></script>
         <div class = "tour">
             <h1 class="tourh1">TAKE A TOUR</h1>
             <div class = "tourWrapper">
-                <div class = "leftSide">
-                    <h2 id = "tourTitle">Map</h2>
+                <!-- Landing page that shows up first -->
+                <div class = "landingPage">
+                    <div class = "imageCarrossel">
+                        <div class = "landingImageContainer">
+                            <img src="images/login.png">
+                        </div>
+                        <div class = "landingImageContainer">
+                            <img src="images/login.png">
+                        </div>
+                        <div class = "landingImageContainer">
+                            <img src="images/map.png">
+                        </div>
+                        <div class = "landingImageContainer">
+                            <img src="images/schedule.png">
+                        </div>
+                        <div class = "landingImageContainer">
+                            <img src="images/settings.png">
+                        </div>
+                        
 
-                    <p id = "tourDescription">The main map page welcomes you onto the app, where it shows the map and your current location. There's a search bar up top, where you type in a location, i.e. "Billings Library," and it will track your travel to help you get there. There is also an ETA for your route, which helps you keep on pace. There are also two modes, bike and walk, which help you plan your journey for both modes of travel.</p>
+                        <div class = "landingImageContainer">
+                            <img src="images/login.png">
+                        </div>
+                        <div class = "landingImageContainer">
+                            <img src="images/login.png">
+                        </div>
+                        <div class = "landingImageContainer">
+                            <img src="images/map.png">
+                        </div>
+                        <div class = "landingImageContainer">
+                            <img src="images/schedule.png">
+                        </div>
+                        <div class = "landingImageContainer">
+                            <img src="images/settings.png">
+                        </div>
+                    </div>
                     <input 
                     type="button"
-                    class="tourNextButton"
+                    class="tourNextButton buttonHover"
+                    onclick="tour.hideLanding()"
+                    value="Start">
+                </div>
+                <div class = "leftSide">
+                    <h2 id = "tourTitle">
+                        Map
+                    </h2>
+
+                    <p id = "tourDescription">
+                        The main map page welcomes you onto the app, where it shows the map and your current location. There's a search bar up top, where you type in a location, i.e. "Billings Library," and it will track your travel to help you get there. There is also an ETA for your route, which helps you keep on pace. There are also two modes, bike and walk, which help you plan your journey for both modes of travel.
+                    </p>
+                    <input 
+                    type="button"
+                    class="tourNextButton buttonHover"
                     onclick="tour.nextPage()"
                     value="Next">
                 </div>
-
 
                 <div class = "rightSide">
                     <div class = "tourImageContainer">
@@ -64,6 +109,11 @@ crossorigin="anonymous"></script>
                 <p>Tate Osborn</p>
             </div>
             <div class = "socialsEmailContainer">
+                <div class = "cantactContainer">
+                    <h2>Contact Us!</h2>
+                    <textarea class = "emailTextarea" placeholder="Ask a Question!"></textarea>
+                    <input type="button" class = "sendEmailButton" value = "Send">
+                </div>
                 <!-- Socials Section -->
                 <div class="socialsContainer">
                     <a class = "socialA" target = "_blank" href = "https://github.com/tyallembert/UVMap_Website">
@@ -75,16 +125,11 @@ crossorigin="anonymous"></script>
                         <p>Figma</p>
                     </a>              
                 </div>
-                <div class = "cantactContainer">
-                    <h2>Contact Us!</h2>
-                    <textarea class = "emailTextarea" placeholder="Ask a Question!"></textarea>
-                    <input type="button" class = "sendEmailButton" value = "Send">
-                </div>
             </div>
         </div>
     </footer>
     <script>
-        let tour = new Tour(1);
+        let tour = new Tour(0);
     </script>
 </body>
 </html>

@@ -31,6 +31,12 @@ class Tour {
 		this.UITitle = $("#tourTitle");
 		this.UIDescription = $("#tourDescription");
 		this.UIImage = $("#tourImage");
+		this.UIImageContainer = $(".tourImageContainer");
+	}
+	hideLanding(){
+		$(".landingPage").animate({opacity: '0'}, "200ms").promise().done(()=>{
+			$(".landingPage").css("display", "none");
+		});
 	}
 	nextPage(){
 		if(this.activePage == 5){
@@ -41,10 +47,18 @@ class Tour {
 		this.updateUI();
 	}
 	updateUI(){
-		console.log("title: "+this.pages[this.activePage]["title"])
-		this.UITitle.html(this.pages[this.activePage]["title"])
-		this.UIDescription.html(this.pages[this.activePage]["description"])
-		this.UIImage.attr("src",this.pages[this.activePage]["image"])
+		this.UIImageContainer.animate({"margin-left": '+=200', 'opacity': 'toggle'}, 300).promise().done(()=>{
+			this.UIImage.attr("src",this.pages[this.activePage]["image"]);
+			this.UIImageContainer.animate({"margin-left": '-=200', 'opacity': 'toggle'}, 800);
+		});
+		this.UITitle.animate({"opacity": 'toggle'}, 500).promise().done(()=>{
+			this.UITitle.html(this.pages[this.activePage]["title"]);
+			this.UITitle.animate({"opacity": 'toggle'}, 500);
+		});
+		this.UIDescription.animate({"opacity": 'toggle'}, 500).promise().done(()=>{
+			this.UIDescription.html(this.pages[this.activePage]["description"]);
+			this.UIDescription.animate({"opacity": 'toggle'}, 500);
+		});
 	}
 }
   

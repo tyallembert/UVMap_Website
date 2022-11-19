@@ -18,6 +18,11 @@ img{
 a:visited{
     color: none;
 }
+.buttonHover:hover{
+    cursor: pointer;
+    box-shadow: -3px 3px 6px rgba(0,0,0,0.7);
+    transform: translate(3px, -3px);
+}
 /*=======================================*/
 /* --Navigation-- */
 /*=======================================*/
@@ -99,7 +104,7 @@ footer .navLinks a, footer .navLinks a:visited{
     width: 100%;
     display: flex;
     justify-content: space-around;
-    margin-bottom: 2em;
+    margin: 2em auto;
 }
 .socialA{
     display: flex;
@@ -108,6 +113,10 @@ footer .navLinks a, footer .navLinks a:visited{
     text-decoration: none;
     color: white;
     width: 3em;
+    transition: all ease 200ms;
+}
+.socialA:hover{
+    transform: scale(1.1);
 }
 .socialA img{
     height: 3em;
@@ -129,9 +138,9 @@ footer .navLinks a, footer .navLinks a:visited{
     transition: all ease 400ms;
 }
 .emailTextarea:focus{
+    border-radius: 10px;
     height: 6em;
     width: 18em;
-    border-radius: 10px;
     outline: solid 2px var(--gold);
 }
 .sendEmailButton{
@@ -247,10 +256,6 @@ footer .navLinks a, footer .navLinks a:visited{
     font-size: 0.9em;
     transition: all ease-in-out 200ms;
 }
-.buttonsContainer a:hover{
-    box-shadow: -3px 3px 6px rgba(0,0,0,0.7);
-    transform: translate(3px, -3px);
-}
 .buttonInspiration{
     background-color: var(--gold);
     border: solid 2px white;
@@ -315,7 +320,7 @@ footer .navLinks a, footer .navLinks a:visited{
 }
 
 /*====================================*/
-/*Tour*/
+/*--Tour--*/
 /*====================================*/
 
 .tour{
@@ -331,6 +336,7 @@ footer .navLinks a, footer .navLinks a:visited{
     
 }
 .tourWrapper{
+    position: relative;
     display: flex;
     flex-direction: row;
     height: 40em;
@@ -341,6 +347,45 @@ footer .navLinks a, footer .navLinks a:visited{
     border-radius: 30px;
     overflow: hidden;
 }
+.tourWrapper .landingPage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, rgb(222, 222, 222), rgb(163, 163, 163));
+    overflow: hidden;
+    z-index: 10;
+}
+.tourWrapper .landingPage .imageCarrossel{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    padding: 2%;
+    width: calc(13em * 12.2);
+    animation: scroll 20s linear infinite;
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-13em * 6));
+    }
+}
+.tourWrapper .landingPage .imageCarrossel .landingImageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 13em;
+    border-radius: 2.2em;
+    padding: 0.6em;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.7), inset 0px 0px 5px rgba(255,255,255,1);
+    background-color: rgb(0,0,0);
+    overflow: hidden;
+}
+
 .tourWrapper .leftSide{
     position: relative; 
     display: flex;
@@ -364,7 +409,7 @@ footer .navLinks a, footer .navLinks a:visited{
     width: 70%;
     border-radius: 3em;
     padding: 0.8em;
-    box-shadow: inset 0px 0px 4px rgba(255,255,255,0.7);
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.7), inset 0px 0px 5px rgba(255,255,255,1);
     background-color: rgb(0,0,0);
     overflow: hidden;
 }
@@ -379,19 +424,19 @@ footer .navLinks a, footer .navLinks a:visited{
     width: 100%;
 }
 .tourNextButton{
-    position: absolute;
-    bottom: 10%;
+    display: block;
     text-decoration: none;
     padding: 1em;
     border-radius: 100px;
     width: 150px;
     font-weight: 600;
     font-size: 0.9em;
-    transition: all ease-in-out 200ms;
     background-color: var(--gold);
     border: solid 2px white;
     color: white;
+    margin: 2em auto;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+    transition: all ease-in-out 200ms;
 }
 
 .tourButton{
