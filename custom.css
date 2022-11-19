@@ -439,3 +439,74 @@ footer .navLinks a, footer .navLinks a:visited{
     transition: all ease-in-out 200ms;
 }
 
+.tourButton{
+    border: solid 2px red;
+    position: absolute;
+    width: 5%;
+    bottom: 5em;
+    left: 40em;
+    font-size: large;
+}
+input{
+    text-decoration: none;
+    color: var(--green);
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+}
+
+/*====================================*/
+/*Contributors*/
+/*====================================*/
+
+.contributorMainTitle{
+    color: var(--gold);
+    font-size: 3em;
+    font-weight: 900;
+    padding-top: 1em;
+    padding-left: 3em;
+}
+.contributorContainer{
+    display: flex;
+    padding: 3em;
+}
+.contributorImage{
+    border: 3px solid white;
+    /* border-radius: 50%; */
+    clip-path: circle();
+}
+.contributorTitle{
+    padding-top: 1em;
+}
+.contributorLink{
+    color: white;
+    text-decoration: none;
+    font-size: small;
+}
+.contributorLink:hover{
+    color: var(--gold);
+}
+.tate, .jack, .nate, .ty, .emmett{
+    /* color: white; */
+    color: var(--gold);
+    padding: 1em;
+
+}
+.tate, .nate{
+    width: 20%;
+}
+.ty, .jack, .emmett{
+    width: 20%;
+}
+.contributorText{
+    color: white;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    font-size: large;
+    padding-left: 7em;
+    padding-right: 7em;
+}
+
+
