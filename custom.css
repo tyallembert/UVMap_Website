@@ -526,12 +526,14 @@ input{
 }
 .contributorText{
     color: white;
-    display: flex;
-    text-align: center;
     margin: auto;
     font-size: large;
     padding-left: 7em;
     padding-right: 7em;
+    /* border: 2px solid green; */
+}
+.contributorText>p{
+    padding: 1em;
 }
 .contributorInfo{
     display: flex;
