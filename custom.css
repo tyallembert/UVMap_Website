@@ -50,11 +50,14 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 80%;
     margin: auto;
-    height: 20em;
+    height: 10em;
     border-top: solid 2px var(--gold);
     margin-top: 5rem;
+}
+.logoImg{
+    width: 10%;
 }
 .logoImage{
     transform: scale(0.8);
@@ -63,10 +66,11 @@ footer{
     display: flex;
     justify-content: space-around;
     /* align-items: center; */
-    width: 70%;
+    width: 50%;
     height: 100%;
-    padding: 2rem;
-    box-shadow: -10px 0px 10px rgb(0,0,0,0.2);
+    padding: 1rem;
+    /* border-left: 2px solid var(--gold); */
+    box-shadow: -6px 0 8px -4px rgba(0,0,0,0.7);
 }
 footer .navLinks{
     display: flex;
@@ -98,19 +102,27 @@ footer .navLinks a, footer .navLinks a:visited{
     margin-bottom: 1.5em;
 }
 .socialsEmailContainer{
-    width: 30%;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction:row-reverse;
 }
 .socialsContainer{
-    width: 100%;
+    width: 40%;
     display: flex;
-    justify-content: space-around;
-    margin: 2em auto;
+    /* justify-content: space-around; */
+    /* margin: 2em auto; */
+    /* border: 2px solid blue; */
+}
+.contactContainer{
+    /* border: 2px solid green; */
+    width: 60%;
 }
 .socialA{
     display: flex;
+    float: left;
     flex-direction: column;
     align-items: center;
-    text-decoration: none;
     color: white;
     width: 3em;
     transition: all ease 200ms;
@@ -120,12 +132,13 @@ footer .navLinks a, footer .navLinks a:visited{
 }
 .socialA img{
     height: 3em;
+    padding: 0.2em;
 }
 .socialA p{
     font-size: 0.9em;
     padding-top: 0.5em;
 }
-.cantactContainer h2{
+.contactContainer h2{
     color: white;
 }
 .emailTextarea{
@@ -189,6 +202,17 @@ footer .navLinks a, footer .navLinks a:visited{
     font-weight: 600;
     font-size: 1.5em;
     color: var(--gold);
+}
+.indexTitle3{
+    font-weight: 650;
+    font-size: 2em;
+    color: white;
+}
+.indexTitle4{
+    font-weight: 550;
+    font-size: 2em;
+    color: var(--gold);
+    padding-bottom: 0.5em;
 }
 /*=======================================*/
 /* Images */
@@ -477,12 +501,13 @@ input{
     clip-path: circle();
 }
 .contributorTitle{
-    padding-top: 1em;
+    padding-bottom: 0.5em;
 }
 .contributorLink{
     color: white;
     text-decoration: none;
     font-size: small;
+    padding:0.2em;
 }
 .contributorLink:hover{
     color: var(--gold);
@@ -501,12 +526,22 @@ input{
 }
 .contributorText{
     color: white;
-    display: flex;
-    text-align: center;
     margin: auto;
     font-size: large;
     padding-left: 7em;
     padding-right: 7em;
+    /* border: 2px solid green; */
+}
+.contributorText>p{
+    padding: 1em;
+}
+.contributorInfo{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+    padding-top: 1em;
+
 }
 
 
