@@ -526,7 +526,7 @@ input{
     width: 20%;
 }
 .contributorText{
-    color: white;
+    color: rgba(255,255,255,0.8);
     margin: auto;
     font-size: large;
     padding-left: 7em;
