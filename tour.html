@@ -1,121 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="custom.css">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
     <script src="script.js?id=1234"></script>
-    <script
-src="https://code.jquery.com/jquery-3.4.1.js"
-integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <title>UVMaps</title>
 </head>
+
 <body>
-    <nav class = "navigation">
+    <nav class="navigation">
         <a href="index.html">Home</a>
         <a href="tour.html">Take a Tour</a>
         <a href="contributors.html">Contributors</a>
-        
+
     </nav>
-    <main class = "indexMain">
-        <div class = "tour">
+    <main class="indexMain">
+        <div class="tour">
             <h1 class="tourh1">TAKE A TOUR</h1>
-            <div class = "tourWrapper">
+            <div class="tourWrapper">
                 <!-- Landing page that shows up first -->
-                <div class = "landingPage">
-                    <div class = "imageCarrossel">
-                        <div class = "landingImageContainer">
+                <div class="landingPage">
+                    <div class="imageCarrossel">
+                        <div class="landingImageContainer">
                             <img src="images/login.png">
                         </div>
-                        <div class = "landingImageContainer">
+                        <div class="landingImageContainer">
                             <img src="images/login.png">
                         </div>
-                        <div class = "landingImageContainer">
+                        <div class="landingImageContainer">
                             <img src="images/map.png">
                         </div>
-                        <div class = "landingImageContainer">
+                        <div class="landingImageContainer">
                             <img src="images/schedule.png">
                         </div>
-                        <div class = "landingImageContainer">
+                        <div class="landingImageContainer">
                             <img src="images/settings.png">
                         </div>
-                        
 
-                        <div class = "landingImageContainer">
+
+                        <div class="landingImageContainer">
                             <img src="images/login.png">
                         </div>
-                        <div class = "landingImageContainer">
+                        <div class="landingImageContainer">
                             <img src="images/login.png">
                         </div>
-                        <div class = "landingImageContainer">
+                        <div class="landingImageContainer">
                             <img src="images/map.png">
                         </div>
-                        <div class = "landingImageContainer">
+                        <div class="landingImageContainer">
                             <img src="images/schedule.png">
                         </div>
-                        <div class = "landingImageContainer">
+                        <div class="landingImageContainer">
                             <img src="images/settings.png">
                         </div>
                     </div>
-                    <input 
-                    type="button"
-                    class="tourNextButton buttonHover"
-                    onclick="tour.hideLanding()"
-                    value="Start">
+                    <input type="button" class="tourNextButton buttonHover" onclick="tour.hideLanding()" value="Start">
                 </div>
-                <div class = "leftSide">
-                    <h2 id = "tourTitle">
+                <div class="leftSide">
+                    <h2 id="tourTitle">
                         Map
                     </h2>
 
-                    <p id = "tourDescription">
-                        The main map page welcomes you onto the app, where it shows the map and your current location. There's a search bar up top, where you type in a location, i.e. "Billings Library," and it will track your travel to help you get there. There is also an ETA for your route, which helps you keep on pace. There are also two modes, bike and walk, which help you plan your journey for both modes of travel.
+                    <p id="tourDescription">
+                        The main map page welcomes you onto the app, where it shows the map and your current location.
+                        There's a search bar up top, where you type in a location, i.e. "Billings Library," and it will
+                        track your travel to help you get there. There is also an ETA for your route, which helps you
+                        keep on pace. There are also two modes, bike and walk, which help you plan your journey for both
+                        modes of travel.
                     </p>
-                    <input 
-                    type="button"
-                    class="tourNextButton buttonHover"
-                    onclick="tour.nextPage()"
-                    value="Next">
+                    <input type="button" class="tourNextButton buttonHover" onclick="tour.nextPage()" value="Next">
                 </div>
 
-                <div class = "rightSide">
-                    <div class = "tourImageContainer">
-                        <img id = "tourImage" src="images/map.png">
+                <div class="rightSide">
+                    <div class="tourImageContainer">
+                        <img id="tourImage" src="images/map.png">
                     </div>
                 </div>
             </div>
         </div>
     </main>
     <footer>
-        <img class = "logoImg" src="images/old_icon-1.png">
-        <div class = "logoImage">
-            <h2 class = "indexTitle4">Revolutionizing UVM Travel</h2>
-            <h2 class = "indexTitle3">By Students, For Students.™</h2>
+        <img class="logoImg" src="images/old_icon-1.png">
+        <div class="logoImage">
+            <h2 class="indexTitle4">Revolutionizing UVM Travel</h2>
+            <h2 class="indexTitle3">By Students, For Students.™</h2>
         </div>
-        <div class = "footerRightSide">
-            <div class = "socialsEmailContainer">
+        <div class="footerRightSide">
+            <div class="socialsEmailContainer">
                 <!-- Socials Section -->
                 <div class="socialsContainer">
-                    <a class = "socialA" target = "_blank" href = "https://github.com/tyallembert/UVMap_Website">
+                    <a class="socialA" target="_blank" href="https://github.com/tyallembert/UVMap_Website">
                         <img src="images/github-logo.png">
-                    </a>  
-                    <a class = "socialA" target = "_blank" href = "https://www.figma.com/file/vqD6cYHCv0PdiUmZf1oRUv/UVM-Campus-Map?node-id=0%3A1&t=fb6D4nYisVbpUGVg-1">
-                        <img src="images/figma-logo.png">       
-                    </a>    
-                    <a class = "socialA" target = "_blank" href = "https://www.instagram.com/uvmapsapp/">
+                    </a>
+                    <a class="socialA" target="_blank"
+                        href="https://www.figma.com/file/vqD6cYHCv0PdiUmZf1oRUv/UVM-Campus-Map?node-id=0%3A1&t=fb6D4nYisVbpUGVg-1">
+                        <img src="images/figma-logo.png">
+                    </a>
+                    <a class="socialA" target="_blank" href="https://www.instagram.com/uvmapsapp/">
                         <img src="images/instagram-logo.png">
                     </a>
                     <a class="socialA" target="_blank" href="https://uvmaps.dev/">
                         <img src="images/web.png">
                     </a>
-                    <!-- icons via UnicornLabs & FreeIcons -->          
+                    <!-- icons via UnicornLabs & FreeIcons -->
                 </div>
-                <div class = "contactContainer">
+                <div class="contactContainer">
                     <h2>Contact Us</h2>
-                    <textarea class = "emailTextarea" placeholder="Ask a Question!"></textarea>
-                    <input type="button" class = "sendEmailButton" value = "Send">
+                    <textarea class="emailTextarea" placeholder="Ask a Question!"></textarea>
+                    <input type="button" class="sendEmailButton" value="Send">
                 </div>
             </div>
         </div>
@@ -124,4 +122,5 @@ crossorigin="anonymous"></script>
         let tour = new Tour(0);
     </script>
 </body>
+
 </html>
