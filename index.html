@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" media="only screen and (max-width: 450px)" href="css/mobile.css" />
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
     <script src="script.js?id=1234"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js"
@@ -73,7 +74,7 @@
                 potential schedules for the future. The last stop is the settings page, where students are able to
                 customize the app to their liking, and also fine-tune how the app specifically helps you.</p>
         </div>
-        <div class="development">
+        <div id="development" class = "development">
             <h1 class="inspirationHeader2">DEVELOPMENT</h1>
             <p id="paraText">
                 It all started on the night of September 23rd. The five of us were paired up to work on this project for
@@ -104,16 +105,18 @@
                 </p>
             </div>
             <div class="devImagesContainer">
-                <img src="images/development.png" class="devImage1">
-                <img src="images/graph.png" class="devImage2">
-            </div>
-            <div class="subtitles">
-                <p class="subtitleText1">
-                    <em>A picture of Xcode, software we used to write SwiftUI and build our app.</em>
-                </p>
-                <p class="subtitleText2">
-                    <em>A picture of our Cumulative Flow Diagram in Jira, which helped us track progress throughout the project.</em>
-                </p>
+                <div class = "devImageWrapper">
+                    <img src="images/development.png" class="devImage1">
+                    <p class="subtitleText1">
+                        <em>A picture of Xcode, software we used to write SwiftUI and build our app.</em>
+                    </p>
+                </div>
+                <div class = "devImageWrapper">
+                    <img src="images/graph.png" class="devImage2">
+                    <p class="subtitleText2">
+                        <em>A picture of our Cumulative Flow Diagram in Jira, which helped us track progress throughout the project.</em>
+                    </p>
+                </div>
             </div>
             <div>
                 <p id="paraText">
@@ -135,10 +138,12 @@
         </div> -->
     </main>
     <footer>
-        <img class="logoImg" src="images/old_icon-1.png">
         <div class="logoImage">
-            <h2 class="indexTitle4">Revolutionizing UVM Travel</h2>
-            <h2 class="indexTitle3">By Students, For Students.™</h2>
+            <img class="logoImg" src="images/old_icon-1.png">
+            <div class = "footerLogoText">
+                <h2 class="indexTitle4">Revolutionizing UVM Travel</h2>
+                <h2 class="indexTitle3">By Students, For Students.™</h2>
+            </div>
         </div>
         <div class = "footerRightSide">
             <div class = "navLinks">

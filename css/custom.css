@@ -6,7 +6,7 @@
     scroll-behavior: smooth;
     --gold: rgb(233, 187, 66);
     --green: rgb(63, 98, 59);
-    --header-height: 100vh;
+    --header-height: 700px;
 }
 body{
     background:linear-gradient(0deg, var(--green), rgb(28, 48, 26));
@@ -29,8 +29,6 @@ a:visited{
     font-size: 1.3em;
     font-weight: 300;
     line-height: 1.7em;
-    padding-right: 3.5em;
-    padding-left: 3.5em;
 }
 /*=======================================*/
 /* --Navigation-- */
@@ -44,6 +42,7 @@ a:visited{
     z-index: 2;
 }
 .navigation a, .navigation a:visited{
+    text-align: center;
     color: rgb(255, 255, 255);
     text-decoration: none;
     padding: 1em;
@@ -66,9 +65,15 @@ footer{
     margin-top: 5rem;
 }
 .logoImg{
-    width: 10%;
+    width: 8em;
+    margin-right: 2em;
 }
 .logoImage{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    margin: auto;
     transform: scale(0.8);
 }
 .footerRightSide{
@@ -257,20 +262,10 @@ footer .navLinks a, footer .navLinks a:visited{
     top: 2em;
     left: 10%;
 }
-.devImage1{
-    width: 30%;
-    margin-right: 5em;
-    margin-left: 5em;
-}
-.devImage2{
-    width: 30%;
-    margin-right: 5em;
-    margin-left: 5em;
 
-}
 .devImagesContainer{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     padding: 2em;
 }
 /*=======================================*/
@@ -362,27 +357,25 @@ footer .navLinks a, footer .navLinks a:visited{
 }
 .development{
     padding-top: 3em;
+    width: 90%;
+    margin: auto;
 }
-.development>div{
-    padding-bottom: 0.5em;
-    padding-top: 0.5em;
-}
-.subtitles{
+.devImageWrapper{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
 }
 .subtitleText1{
     color: white;
     font-size:small;
     display: flex;
     justify-content: center;
-    padding-left: 17em;
 }
 .subtitleText2{
     color: white;
     font-size:small;
     display: flex;
-    padding-right: 8.5em;
     justify-content: center;
 }
 /*====================================*/
