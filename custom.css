@@ -230,20 +230,7 @@ footer .navLinks a, footer .navLinks a:visited{
     height: var(--header-height);
     width: 40%;
     margin-left: 5em;
-    margin-top: 7em;
     transition: all 400ms ease;
-}
-.indexHeader .imagesContainer:hover #imageMap{
-    top: 6em;
-    left: 10%;
-}
-.indexHeader .imagesContainer:hover #imageSchedule{
-    top: 6em;
-    left: 50%;
-}
-.indexHeader .imagesContainer:hover #imageSettings{
-    top: 6em;
-    left: 90%;
 }
 .singleImage{
     position: absolute;
@@ -427,6 +414,14 @@ footer .navLinks a, footer .navLinks a:visited{
     box-shadow: 0px 0px 50px rgba(0,0,0,0.5);
     z-index: 2;
     padding: 1em;
+}
+.tourWrapper .tourButtonsContainer{
+    position: absolute;
+    bottom: 10%;
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin: auto;
 }
 .tourWrapper .rightSide{
     display: flex;
