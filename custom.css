@@ -23,7 +23,15 @@ a:visited{
     box-shadow: -3px 3px 6px rgba(0,0,0,0.7);
     transform: translate(3px, -3px);
 }
-/*testtopush*/
+#paraText{
+    color: white;
+    text-indent: 3em;
+    font-size: 1.3em;
+    font-weight: 300;
+    line-height: 1.7em;
+    padding-right: 3.5em;
+    padding-left: 3.5em;
+}
 /*=======================================*/
 /* --Navigation-- */
 /*=======================================*/
@@ -524,14 +532,14 @@ input{
 .ty, .jack, .emmett{
     width: 20%;
 }
-.contributorText{
+/* .contributorText{
     color: rgba(255,255,255,0.8);
     margin: auto;
     font-size: large;
     padding-left: 7em;
     padding-right: 7em;
-    /* border: 2px solid green; */
-}
+    /* border: 2px solid green; 
+} */
 .contributorText>p{
     padding: 1em;
 }
