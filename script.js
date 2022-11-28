@@ -32,6 +32,7 @@ class Tour {
 		this.UIDescription = $("#tourDescription");
 		this.UIImage = $("#tourImage");
 		this.UIImageContainer = $(".tourImageContainer");
+		this.updateUI();
 	}
 	hideLanding(){
 		$(".landingPage").animate({opacity: '0'}, "200ms").promise().done(()=>{
@@ -43,6 +44,14 @@ class Tour {
 			this.activePage = 1
 		}else{
 			this.activePage = this.activePage + 1
+		}
+		this.updateUI();
+	}
+	backPage(){
+		if(this.activePage == 1){
+			this.activePage = 5
+		}else{
+			this.activePage = this.activePage - 1
 		}
 		this.updateUI();
 	}

@@ -63,18 +63,19 @@
                     <input type="button" class="tourNextButton buttonHover" onclick="tour.hideLanding()" value="Start">
                 </div>
                 <div class="leftSide">
-                    <h2 id="tourTitle">
-                        Map
-                    </h2>
+                    <h2 id="tourTitle"></h2>
 
                     <p id="tourDescription">
-                        The main map page welcomes you onto the app, where it shows the map and your current location.
+                        <!-- The main map page welcomes you onto the app, where it shows the map and your current location.
                         There's a search bar up top, where you type in a location, i.e. "Billings Library," and it will
                         track your travel to help you get there. There is also an ETA for your route, which helps you
                         keep on pace. There are also two modes, bike and walk, which help you plan your journey for both
-                        modes of travel.
+                        modes of travel. -->
                     </p>
-                    <input type="button" class="tourNextButton buttonHover" onclick="tour.nextPage()" value="Next">
+                    <div class = "tourButtonsContainer">
+                        <input type="button" class="tourNextButton buttonHover" onclick="tour.backPage()" value="Back">
+                        <input type="button" class="tourNextButton buttonHover" onclick="tour.nextPage()" value="Next">
+                    </div>
                 </div>
 
                 <div class="rightSide">
@@ -91,35 +92,40 @@
             <h2 class="indexTitle4">Revolutionizing UVM Travel</h2>
             <h2 class="indexTitle3">By Students, For Students.™</h2>
         </div>
-        <div class="footerRightSide">
-            <div class="socialsEmailContainer">
+        <div class = "footerRightSide">
+            <div class = "navLinks">
+                <a href="index.html">Home</a>
+                <a href="tour.html">Take a Tour</a>
+                <a href="contributors.html">Contributors</a>
+                
+            </div>
+            <div class = "socialsEmailContainer">
+                <div class = "contactContainer">
+                    <h2>Contact Us</h2>
+                    <textarea class = "emailTextarea" placeholder="Ask a Question!"></textarea>
+                    <input type="button" class = "sendEmailButton" value = "Send">
+                </div>
                 <!-- Socials Section -->
                 <div class="socialsContainer">
-                    <a class="socialA" target="_blank" href="https://github.com/tyallembert/UVMap_Website">
-                        <img src="images/github-logo.png">
-                    </a>
-                    <a class="socialA" target="_blank"
-                        href="https://www.figma.com/file/vqD6cYHCv0PdiUmZf1oRUv/UVM-Campus-Map?node-id=0%3A1&t=fb6D4nYisVbpUGVg-1">
-                        <img src="images/figma-logo.png">
-                    </a>
-                    <a class="socialA" target="_blank" href="https://www.instagram.com/uvmapsapp/">
-                        <img src="images/instagram-logo.png">
+                    <a class="socialA" target="_blank" href="https://github.com/tyallembert/UVMap">
+                        <img src="images/logos/github-logo.png">
+                    </a>  
+                    <a class = "socialA" target = "_blank" href = "https://www.figma.com/file/vqD6cYHCv0PdiUmZf1oRUv/UVM-Campus-Map?node-id=0%3A1&t=fb6D4nYisVbpUGVg-1">
+                        <img src="images/logos/figma-logo.png">       
+                    </a>    
+                    <a class = "socialA" target = "_blank" href = "https://www.instagram.com/uvmapsapp/">
+                        <img src="images/logos/instagram-logo.png">
                     </a>
                     <a class="socialA" target="_blank" href="https://uvmaps.dev/">
-                        <img src="images/web.png">
+                        <img src="images/logos/web-logo.png">
                     </a>
                     <!-- icons via UnicornLabs & FreeIcons -->
-                </div>
-                <div class="contactContainer">
-                    <h2>Contact Us</h2>
-                    <textarea class="emailTextarea" placeholder="Ask a Question!"></textarea>
-                    <input type="button" class="sendEmailButton" value="Send">
                 </div>
             </div>
         </div>
     </footer>
     <script>
-        let tour = new Tour(0);
+        let tour = new Tour(1);
     </script>
 </body>
 
