@@ -270,6 +270,22 @@ footer .navLinks a, footer .navLinks a:visited{
     top: 2em;
     left: 10%;
 }
+.devImage1{
+    width: 30%;
+    margin-right: 5em;
+    margin-left: 5em;
+}
+.devImage2{
+    width: 30%;
+    margin-right: 5em;
+    margin-left: 5em;
+
+}
+.devImagesContainer{
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
 /*=======================================*/
 /* Buttons */
 /*=======================================*/
@@ -313,6 +329,13 @@ footer .navLinks a, footer .navLinks a:visited{
     padding: 0.3em;
     padding-left: 2em;
 }
+.inspirationHeader2{
+    color: var(--gold);
+    font-size: 3em;
+    font-weight: 900;
+    padding: 0.3em;
+    padding-left: 3.2em;
+}
 .inspiration p{
     color: white;
     text-indent: 3em;
@@ -350,7 +373,31 @@ footer .navLinks a, footer .navLinks a:visited{
 .firstChunk{
     padding-bottom: 1em;
 }
-
+.development{
+    padding-top: 3em;
+}
+.development>div{
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+}
+.subtitles{
+    display: flex;
+    justify-content: space-between;
+}
+.subtitleText1{
+    color: white;
+    font-size:small;
+    display: flex;
+    justify-content: center;
+    padding-left: 17em;
+}
+.subtitleText2{
+    color: white;
+    font-size:small;
+    display: flex;
+    padding-right: 8.5em;
+    justify-content: center;
+}
 /*====================================*/
 /*--Tour--*/
 /*====================================*/
