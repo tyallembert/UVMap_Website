@@ -63,18 +63,19 @@
                     <input type="button" class="tourNextButton buttonHover" onclick="tour.hideLanding()" value="Start">
                 </div>
                 <div class="leftSide">
-                    <h2 id="tourTitle">
-                        Map
-                    </h2>
+                    <h2 id="tourTitle"></h2>
 
                     <p id="tourDescription">
-                        The main map page welcomes you onto the app, where it shows the map and your current location.
+                        <!-- The main map page welcomes you onto the app, where it shows the map and your current location.
                         There's a search bar up top, where you type in a location, i.e. "Billings Library," and it will
                         track your travel to help you get there. There is also an ETA for your route, which helps you
                         keep on pace. There are also two modes, bike and walk, which help you plan your journey for both
-                        modes of travel.
+                        modes of travel. -->
                     </p>
-                    <input type="button" class="tourNextButton buttonHover" onclick="tour.nextPage()" value="Next">
+                    <div class = "tourButtonsContainer">
+                        <input type="button" class="tourNextButton buttonHover" onclick="tour.backPage()" value="Back">
+                        <input type="button" class="tourNextButton buttonHover" onclick="tour.nextPage()" value="Next">
+                    </div>
                 </div>
 
                 <div class="rightSide">
@@ -124,7 +125,7 @@
         </div>
     </footer>
     <script>
-        let tour = new Tour(0);
+        let tour = new Tour(1);
     </script>
 </body>
 
