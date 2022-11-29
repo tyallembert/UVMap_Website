@@ -371,12 +371,14 @@ footer .navLinks a, footer .navLinks a:visited{
     font-size:small;
     display: flex;
     justify-content: center;
+    padding-top: 0.5em;
 }
 .subtitleText2{
     color: white;
     font-size:small;
     display: flex;
     justify-content: center;
+    padding-top: 0.5em;
 }
 /*====================================*/
 /*--Tour--*/
