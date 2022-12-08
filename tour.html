@@ -16,6 +16,9 @@
 
 <body>
     <nav class="navigation">
+        <div class = "navImageContainer">
+            <img src="images/logos/uvmaps-final-icon-transparent(512).png">
+        </div>
         <a href="index.html">Home</a>
         <a href="tour.html">Take a Tour</a>
         <a href="contributors.html">Contributors</a>
@@ -23,7 +26,7 @@
     </nav>
     <main class="indexMain">
         <div class="tour">
-            <h1 class="tourh1">TAKE A TOUR</h1>
+            <h1 class="tourh1" id = "tourh1">TAKE A TOUR</h1>
             <div class="tourWrapper">
                 <!-- Landing page that shows up first -->
                 <div class="landingPage">
@@ -64,6 +67,13 @@
                     <input type="button" class="tourNextButton buttonHover" onclick="tour.hideLanding()" value="Start">
                 </div>
                 <div class="leftSide">
+                    <div class = "tourPagesNav">
+                        <input type = "button" class = "tourNav" id = "tourNav_signup" value = "" onClick="tour.setActivePage(1)">
+                        <input type = "button" class = "tourNav" id = "tourNav_login" value = "" onClick="tour.setActivePage(2)">
+                        <input type = "button" class = "tourNav" id = "tourNav_map" value = "" onClick="tour.setActivePage(3)">
+                        <input type = "button" class = "tourNav" id = "tourNav_schedule" value = "" onClick="tour.setActivePage(4)">
+                        <input type = "button" class = "tourNav" id = "tourNav_settings" value = "" onClick="tour.setActivePage(5)">
+                    </div>
                     <h2 id="tourTitle"></h2>
 
                     <p id="tourDescription">
@@ -81,7 +91,10 @@
 
                 <div class="rightSide">
                     <div class="tourImageContainer">
-                        <img id="tourImage" src="images/map.png">
+                        <video id = "tourVideo" autoplay muted controls loop>
+                            <source id="tourImage" src="images/tourVideos/tour_signup.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
                 </div>
             </div>
@@ -127,6 +140,11 @@
     </footer>
     <script>
         let tour = new Tour(1);
+        //centers the tour on the screen after a second
+        setTimeout(()=>{
+            var scrollDiv = document.getElementById("tourh1").offsetTop;
+            window.scrollTo({top: scrollDiv + 40, behavior: 'smooth'});
+        },1000);
     </script>
 </body>
 
