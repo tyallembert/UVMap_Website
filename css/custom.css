@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
     scroll-behavior: smooth;
-    --gold: rgb(233, 187, 66);
+    --gold: rgb(237, 170, 69);
     --green: rgb(63, 98, 59);
     --header-height: 700px;
 }
@@ -34,12 +34,20 @@ a:visited{
 /* --Navigation-- */
 /*=======================================*/
 .navigation{
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 60%;
+    width: 100%;
+    padding: 0 20%;
     margin: auto;
     z-index: 2;
+}
+.navImageContainer{
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    width: 50px;
 }
 .navigation a, .navigation a:visited{
     text-align: center;
@@ -67,6 +75,8 @@ footer{
 .logoImg{
     width: 8em;
     margin-right: 2em;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px var(--gold);
 }
 .logoImage{
     display: flex;
@@ -161,6 +171,7 @@ footer .navLinks a, footer .navLinks a:visited{
     height: 2em;
     width: 12em;
     padding: 0.5em;
+    overflow-y: hidden;
     transition: all ease 400ms;
 }
 .emailTextarea:focus{
@@ -457,6 +468,38 @@ footer .navLinks a, footer .navLinks a:visited{
     z-index: 2;
     padding: 1em;
 }
+.tourWrapper .tourPagesNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 8em;
+    margin: 0 auto;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 100px;
+    padding: 10px;
+    transition: all 400ms ease;
+}
+.tourWrapper .tourPagesNav:hover{
+    width: 12em;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2),
+    inset 0px 0px 2px rgba(255,255,255,0.5);
+}
+.tourNav{
+    border-radius: 100px;
+    height: 10px;
+    width: 10px;
+    background-color: rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.tourNav:hover{
+    background-color: rgba(0,0,0,0.5);
+}
+.activeTourNav{
+    background-color: var(--green);
+    border: solid 2px var(--gold);
+    transform: scale(1.5);
+}
 .tourWrapper .tourButtonsContainer{
     position: absolute;
     bottom: 10%;
@@ -482,15 +525,26 @@ footer .navLinks a, footer .navLinks a:visited{
     background-color: rgb(0,0,0);
     overflow: hidden;
 }
+video{
+    width: 100%;
+    clip-path: inset(0% 0% 0% 0% round 30px);
+}
 .tourWrapper .rightSide img{
     width: 100%;
 }
 .tourWrapper .leftSide h2{
-    color: var(--green);
-    /* text-decoration: underline; */
-    font-size: 2.2em;
-    margin-bottom: 1em;
-    width: 100%;
+    /* color: var(--green); */
+    font-size: 2.8em;
+    font-weight: 900;
+    margin: 1em 0;
+    /* width: 100%; */
+    background-image: linear-gradient(
+        45deg,
+        var(--green) 50%,
+        var(--gold) 50%);
+    /* background: -webkit-linear-gradient(-90deg, var(--green), var(--gold)); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .tourNextButton{
     display: block;
@@ -507,7 +561,11 @@ footer .navLinks a, footer .navLinks a:visited{
     text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
     transition: all ease-in-out 200ms;
 }
-
+#tourDescription{
+    padding: 3%;
+    line-height: 2em;
+    font-size: 1.1em;
+}
 .tourButton{
     border: solid 2px red;
     position: absolute;
