@@ -571,14 +571,6 @@ video{
 #tourDescription::-webkit-scrollbar {
     display: none;
 }
-.tourButton{
-    border: solid 2px red;
-    position: absolute;
-    width: 5%;
-    bottom: 5em;
-    left: 40em;
-    font-size: large;
-}
 input{
     text-decoration: none;
     color: var(--green);
@@ -603,13 +595,43 @@ input{
     display: flex;
     padding: 3em;
 }
-.contributorImage{
+.contributorContainer>div{
+    transition: all 200ms ease-in-out;
+}
+/* -------------------- */
+/* ==hover== */
+/* -------------------- */
+.contributorContainer>div:hover{
+    transform: scale(1.2);
+}
+.contributorContainer>div:hover .contributorTitle{
+    font-size: 1.5em;
+}
+.contributorContainer>div:hover .contributorImageContainer{
+    border: solid 5px var(--gold);
+}
+
+.contributorImageContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 3px solid white;
+    background-color: white;
+    border-radius: 200px;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    transition: all 200ms ease;
+    transition-delay: 100ms;
+}
+.contributorImage{
+    transform: scale(1.2);
     /* border-radius: 50%; */
-    clip-path: circle();
+    /* clip-path: circle(); */
 }
 .contributorTitle{
     padding-bottom: 0.5em;
+    transition: all 400ms ease-in-out;
 }
 .contributorLink{
     color: white;
@@ -624,12 +646,6 @@ input{
     /* color: white; */
     color: var(--gold);
     padding: 1em;
-
-}
-.tate, .nate{
-    width: 20%;
-}
-.ty, .jack, .emmett{
     width: 20%;
 }
 /* .contributorText{
