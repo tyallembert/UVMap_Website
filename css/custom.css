@@ -618,8 +618,11 @@ input{
     border: 3px solid white;
     background-color: white;
     border-radius: 200px;
-    width: 200px;
-    height: 200px;
+    width: 60%;
+    margin: auto;
+    /* max-width: ; */
+    aspect-ratio: 1/1;
+    /* height: 200px; */
     overflow: hidden;
     transition: all 200ms ease;
     transition-delay: 100ms;
@@ -630,10 +633,12 @@ input{
     /* clip-path: circle(); */
 }
 .contributorTitle{
+    text-align: center;
     padding-bottom: 0.5em;
     transition: all 400ms ease-in-out;
 }
 .contributorLink{
+    text-align: center;
     color: white;
     text-decoration: none;
     font-size: small;
