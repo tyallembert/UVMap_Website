@@ -100,3 +100,19 @@ footer .navLinks{
     border-radius: 2.5em;
     padding: 0.5em;
 }
+/*=======================================*/
+/* --Contributors-- */
+/*=======================================*/
+.contributorMainTitle{
+    padding-left: 0;
+    width: 85%;
+    margin: auto;
+    text-align: center;
+}
+.contributorContainer{
+    flex-direction: column;
+    align-items: center;
+}
+.contributorContainer>div{
+    width: 100%;
+}
