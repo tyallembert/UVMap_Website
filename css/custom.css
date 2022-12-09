@@ -542,7 +542,6 @@ video{
         -45deg,
         var(--gold) 50%, 
         var(--green) 50%);
-    /* background: -webkit-linear-gradient(-90deg, var(--green), var(--gold)); */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -565,9 +564,9 @@ video{
     padding: 3%;
     line-height: 2em;
     font-size: 1.1em;
-    overflow-y: scroll;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    /* overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;  Firefox */
 }
 #tourDescription::-webkit-scrollbar {
     display: none;
