@@ -539,9 +539,9 @@ video{
     margin: 1em 0;
     /* width: 100%; */
     background-image: linear-gradient(
-        45deg,
-        var(--green) 50%,
-        var(--gold) 50%);
+        -45deg,
+        var(--gold) 50%, 
+        var(--green) 50%);
     /* background: -webkit-linear-gradient(-90deg, var(--green), var(--gold)); */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -565,6 +565,12 @@ video{
     padding: 3%;
     line-height: 2em;
     font-size: 1.1em;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+#tourDescription::-webkit-scrollbar {
+    display: none;
 }
 .tourButton{
     border: solid 2px red;
