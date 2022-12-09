@@ -75,3 +75,28 @@ footer .navLinks{
 .socialsContainer{
     margin: 2em auto;
 }
+
+/*=======================================*/
+/* --Tour-- */
+/*=======================================*/
+.tour{
+    width: 90%;
+}
+.tour h1{
+    font-size: 2.5em;
+}
+.tourWrapper{
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+}
+.tourWrapper .leftSide{
+    width: 100%;
+}
+.tourWrapper .rightSide{
+    width: 100%;
+}
+.tourWrapper .rightSide .tourImageContainer{
+    border-radius: 2.5em;
+    padding: 0.5em;
+}
