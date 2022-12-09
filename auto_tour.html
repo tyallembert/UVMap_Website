@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" media="only screen and (max-width: 450px)" href="css/mobile.css" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <script src="script.js?id=1234"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <title>UVMaps</title>
+</head>
+
+<body>
+    <nav class="navigation">
+        <div class = "navImageContainer">
+            <img src="images/logos/uvmaps-final-icon-transparent(512).png">
+        </div>
+        <a href="index.html">Home</a>
+        <a href="tour.html">Take a Tour</a>
+        <a href="contributors.html">Contributors</a>
+
+    </nav>
+    <main class="indexMain">
+        <div class="tour">
+            <h1 class="tourh1" id = "tourh1">TAKE A TOUR</h1>
+            <div class="tourWrapper">
+                <!-- Landing page that shows up first -->
+                <div class="landingPage">
+                    <div class="imageCarrossel">
+                        <div class="landingImageContainer">
+                            <img src="images/tourLanding/signup.png">
+                        </div>
+                        <div class="landingImageContainer">
+                            <img src="images/tourLanding/login.png">
+                        </div>
+                        <div class="landingImageContainer">
+                            <img src="images/tourLanding/map.png">
+                        </div>
+                        <div class="landingImageContainer">
+                            <img src="images/tourLanding/schedule.png">
+                        </div>
+                        <div class="landingImageContainer">
+                            <img src="images/tourLanding/settings.png">
+                        </div>
+
+
+                        <div class="landingImageContainer">
+                            <img src="images/tourLanding/login.png">
+                        </div>
+                        <div class="landingImageContainer">
+                            <img src="images/tourLanding/login.png">
+                        </div>
+                        <div class="landingImageContainer">
+                            <img src="images/tourLanding/map.png">
+                        </div>
+                        <div class="landingImageContainer">
+                            <img src="images/tourLanding/schedule.png">
+                        </div>
+                        <div class="landingImageContainer">
+                            <img src="images/tourLanding/settings.png">
+                        </div>
+                    </div>
+                    <input type="button" class="tourNextButton buttonHover" onclick="tour.hideLanding()" value="Start">
+                </div>
+                <div class="leftSide">
+                    <div class = "tourPagesNav">
+                        <input type = "button" class = "tourNav activeTourNav" id = "tourNav_signup" value = "" onClick="tour.setActivePage(1)">
+                        <input type = "button" class = "tourNav" id = "tourNav_login" value = "" onClick="tour.setActivePage(2)">
+                        <input type = "button" class = "tourNav" id = "tourNav_map" value = "" onClick="tour.setActivePage(3)">
+                        <input type = "button" class = "tourNav" id = "tourNav_schedule" value = "" onClick="tour.setActivePage(4)">
+                        <input type = "button" class = "tourNav" id = "tourNav_settings" value = "" onClick="tour.setActivePage(5)">
+                    </div>
+                    <h2 id="tourTitle"></h2>
+
+                    <p id="tourDescription">
+                        <!-- The main map page welcomes you onto the app, where it shows the map and your current location.
+                        There's a search bar up top, where you type in a location, i.e. "Billings Library," and it will
+                        track your travel to help you get there. There is also an ETA for your route, which helps you
+                        keep on pace. There are also two modes, bike and walk, which help you plan your journey for both
+                        modes of travel. -->
+                    </p>
+                </div>
+
+                <div class="rightSide">
+                    <div class="tourImageContainer">
+                        <video id = "tourVideo" autoplay muted controls loop>
+                            <source id="tourImage" src="images/tourVideos/tour_signup.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="logoImage">
+            <img class="logoImg" src="images/logos/uvmaps-thick-icon(1024).png">
+            <div class = "footerLogoText">
+                <h2 class="indexTitle4">Revolutionizing UVM Travel</h2>
+                <h2 class="indexTitle3">For Students, By Students.™</h2>
+            </div>
+        </div>
+        <div class = "footerRightSide">
+            <div class = "navLinks">
+                <a href="index.html">Home</a>
+                <a href="tour.html">Take a Tour</a>
+                <a href="contributors.html">Contributors</a>
+                
+            </div>
+            <div class = "socialsEmailContainer">
+                <div class = "contactContainer">
+                    <h2>Contact Us</h2>
+                    <textarea class = "emailTextarea" placeholder="Ask a Question!"></textarea>
+                    <input type="button" class = "sendEmailButton" value = "Send">
+                </div>
+                <!-- Socials Section -->
+                <div class="socialsContainer">
+                    <a class="socialA" target="_blank" href="https://github.com/tyallembert/UVMap">
+                        <img src="images/logos/github-logo.png">
+                    </a>  
+                    <a class = "socialA" target = "_blank" href = "https://www.figma.com/file/vqD6cYHCv0PdiUmZf1oRUv/UVM-Campus-Map?node-id=0%3A1&t=fb6D4nYisVbpUGVg-1">
+                        <img src="images/logos/figma-logo.png">       
+                    </a>    
+                    <a class = "socialA" target = "_blank" href = "https://www.instagram.com/uvmapsapp/">
+                        <img src="images/logos/instagram-logo.png">
+                    </a>
+                    <a class="socialA" target="_blank" href="https://uvmaps.dev/">
+                        <img src="images/logos/web-logo.png">
+                    </a>
+                    <!-- icons via UnicornLabs & FreeIcons -->
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        let tour = new Tour(1);
+        //centers the tour on the screen after a second
+        setTimeout(()=>{
+            var scrollDiv = document.getElementById("tourh1").offsetTop;
+            window.scrollTo({top: scrollDiv + 40, behavior: 'smooth'});
+        },1000);
+        tour.autoTour();
+    </script>
+</body>
+
+</html>

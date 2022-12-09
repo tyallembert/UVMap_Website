@@ -43,6 +43,11 @@ class Tour {
 			$(".landingPage").css("display", "none");
 		});
 	}
+	autoTour(){
+		setInterval(()=>{
+            this.nextPage();
+        },30000);
+	}
 	nextPage(){
 		if(this.activePage == 5){
 			this.activePage = 1
