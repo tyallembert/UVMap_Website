@@ -398,6 +398,7 @@ footer .navLinks a, footer .navLinks a:visited{
 .tour{
     width: 75%;
     margin: 3em auto;
+    max-width: 1000px;
 }
 .tour h1{
     color: var(--gold);
@@ -413,8 +414,6 @@ footer .navLinks a, footer .navLinks a:visited{
     flex-direction: row;
     height: 40em;
     margin: auto;
-    width: auto;
-    max-width: 1000px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.8), rgba(201, 201, 201, 0.8));
     box-shadow: 2px 5px 20px rgba(0,0,0,0.7),
     inset 0px 0px 5px rgba(255,255,255,1);
